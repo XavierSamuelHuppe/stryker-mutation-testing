@@ -5,15 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha server/**/*.test.js",
-    "test-watch": "nodemon -x 'npm test'",
-    "mutate": "./node_modules/.bin/stryker run"
+    "test-watch": "./node_modules/.bin/nodemon -x 'npm test'",
+    "mutate": "./node_modules/.bin/stryker run",
+    "mutate-watch": "./node_modules/.bin/nodemon -x 'npm run mutate'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "expect": "^22.0.3",
     "mocha": "^4.1.0",
+    "nodemon": "^1.14.7",
     "stryker": "^0.17.0",
-    "stryker-api": "^0.12.0"
+    "stryker-api": "^0.12.0",
+    "stryker-javascript-mutator": "^0.3.1",
+    "stryker-mocha-framework": "^0.7.2",
+    "stryker-mocha-runner": "^0.10.2"
   }
 }
