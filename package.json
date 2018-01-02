@@ -1,0 +1,19 @@
+{
+  "name": "mutation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon -x 'npm test'",
+    "mutate": "./node_modules/.bin/stryker run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^22.0.3",
+    "mocha": "^4.1.0",
+    "stryker": "^0.17.0",
+    "stryker-api": "^0.12.0"
+  }
+}
